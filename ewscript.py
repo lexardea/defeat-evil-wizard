@@ -38,6 +38,7 @@ class Warrior(Character):
             print(f"{self.name} attacks with slingshot and buys time to heal. {opponent.name} health is now {opponent.health}. {self.name} health is: {self.health}")
         elif choice == "2":
             self.health += 25
+            opponent.health -= 25
             print(f"{self.name} visits the Witch. Health has increased to {self.health} while the spell they cast on {opponent.name} reduces {opponent.name}'s health to {opponent.health}")
         else:
             print("Sorry, that's not one of the options. Please try again.")
